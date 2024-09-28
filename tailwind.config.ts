@@ -57,7 +57,7 @@ const config: Config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'primary': 'var(--primary-color)',
+				'primary-gradient': 'var(--primary-color)',
 			},
 		}
 	},
