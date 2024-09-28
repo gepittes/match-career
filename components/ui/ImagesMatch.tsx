@@ -5,8 +5,8 @@ const ImagesMatch = () => {
     {
       src: "/images/estudante-no-computador.png",
       alt: "Estudante no computador",
-      height: 400,
-      width: 300,
+      height: 551,
+      width: 410,
       position: "relative",
       top: "0",
       left: "0",
