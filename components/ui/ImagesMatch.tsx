@@ -53,7 +53,7 @@ const ImagesMatch = () => {
           alt={image.alt}
           width={image.width}
           height={image.height}
-          className={`object-cover ${image.position} ${image.floatAnimation}`}
+          className={`object-cover ${image.position} ${image.floatAnimation} md:max-w-full max-w-60`}
         />
       ))}
     </div>

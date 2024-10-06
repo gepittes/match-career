@@ -44,8 +44,8 @@ import {
             value={`item-${index}`}
             className="border border-gray-200 rounded py-4 px-5 mb-4"
           >
-            <AccordionTrigger className="w-full flex justify-between items-center text-left text-lg font-normal text-gray-800">
-              <span>{item.summary}</span>
+            <AccordionTrigger className="w-full flex gap-2 justify-between items-center text-left text-lg font-normal text-gray-800">
+              <span className="md:text-xl">{item.summary}</span>
               <ChevronDown
                 className={`transition-transform duration-200 `} /* ${
                     item.isOpen ? "rotate-180" : ""
@@ -53,7 +53,7 @@ import {
               />
             </AccordionTrigger>
             <AccordionContent className="mt-3">
-              <p>{item.details}</p>
+              <p className="md:text-xl leading-7">{item.details}</p>
             </AccordionContent>
           </AccordionItem>
         ))}

@@ -23,7 +23,7 @@ const items = [
 export default function Steps() {
   return (
     <section>
-      <h3 className="text-3xl font-bold leading-normal mb-24 text-center">
+      <h3 className="text-3xl md:text-4xl font-bold md:leading-tight mb-14 text-center">
         Como {""}
         <span className="bg-primary bg-clip-text text-transparent">
           funciona
@@ -38,20 +38,23 @@ export default function Steps() {
                 <div className="p-6 rounded-full text-[#FD3078] bg-[#FF675C1A]">
                   {item.icon}
                 </div>
-                <div className="texto lg:max-w-[543px] space-y-2">
+                <div className="texto lg:max-w-[543px] space-y-5 gap-6">
                   <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <p className="">{item.description}</p>
+                  <p className="md:text-xl mb-6 leading-7">{item.description}</p>
                 </div>
               </li>
             ))}
           </ul>
         </div>
-        <Image
-          src="/images/ilustracao-lapis.png"
-          alt="Ilustração Lápis"
-          width={422}
-          height={542}
-        />
+        <div className="w-full md:w-auto">
+          <Image
+            src="/images/ilustracao-lapis.png"
+            alt="Ilustração Lápis"
+            width={422}
+            height={542}
+            className="md:max-w-full max-w-80 mx-auto"
+          />
+        </div>
       </div>
     </section>
   );
