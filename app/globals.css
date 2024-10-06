@@ -104,4 +104,7 @@ body {
     animation: floatAnimation3 3s ease-in-out infinite;
   }
 
+  .details[open]{
+    transform: rotate(180deg);
+  }
 }

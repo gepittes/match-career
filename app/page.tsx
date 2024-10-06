@@ -1,6 +1,8 @@
-import About from "@/components/About";
-import { Hero } from "@/components/Hero";
-import Steps from "@/components/Steps";
+import About from "@/components/sections/About";
+import CustomAccordion from "@/components/sections/CustomAcordion";
+import { Hero } from "@/components/sections/Hero";
+import Footer from "@/components/layout/Footer";
+import Steps from "@/components/sections/Steps";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Hero />
       <About />
       <Steps />
+      <CustomAccordion />
+      <Footer />
     </div>
   );
 }

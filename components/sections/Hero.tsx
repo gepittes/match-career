@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
-import ImagesMatch from "./ui/ImagesMatch";
+import { Button } from "../ui/button";
+import ImagesMatch from "../ui/ImagesMatch";
 
 export const Hero = () => {
   return (
