@@ -31,9 +31,29 @@ const accordionItems: AccordionItemType[] = [
       "Reserve cerca de 10 minutos para concluir o teste. Escolha um momento tranquilo, sem interrupções, para que você possa refletir e responder confortavelmente. Seja sincero ao responder às perguntas, pois isso é fundamental para que o teste ajude a identificar suas habilidades e interesses. Confie em suas impressões ao preencher as respostas. Após completar o teste, analise os resultados com atenção, pois eles indicarão carreiras alinhadas às suas habilidades. Lembre-se de que a escolha de uma carreira também deve considerar seus valores e experiências.",
   },
   {
+    summary: "Como funciona o Teste Vocacional?",
+    details:
+      "O Teste Vocacional da Quero Bolsa é baseado na teoria das inteligências múltiplas, que argumenta que cada indivíduo pode apresentar diferentes tipos de inteligência que influenciam suas escolhas profissionais.",
+  },
+  {
+    summary: "Por que fazer o Teste Vocacional?",
+    details:
+      "Realizar o teste é uma excelente maneira de identificar suas habilidades, interesses e preferências profissionais, independentemente da sua idade ou fase da carreira; ao participar desse processo, você amplia seus horizontes, descobre habilidades em potencial e reescreve sua trajetória, além de promover um importante autoconhecimento que fortalece sua autoconsciência e autoconfiança.",
+  },
+  {
     summary: "Como saber qual é a profissão ideal para mim?",
     details:
       "Encontrar a profissão ideal pode ser desafiador, mas algumas etapas podem ajudar na decisão. Primeiro, utilize o Teste Vocacional da Match Career, que identifica suas habilidades e sugere profissões alinhadas a elas. O autoconhecimento é essencial: conheça suas habilidades, interesses, valores e personalidade, independentemente da sua idade. Além disso, pesquise diferentes profissões, analisando o mercado de trabalho, as oportunidades de carreira e as competências necessárias. Por fim, considere consultar profissionais de orientação de carreira, que podem esclarecer dúvidas e oferecer suporte na escolha da profissão.",
+  },
+  {
+    summary: "Quando fazer o Teste Vocacional?",
+    details:
+      "Muitos optam por realizar o teste durante o ensino médio, especialmente ao planejar a entrada na faculdade. No entanto, é importante destacar que esse processo pode ser feito em qualquer fase da vida, seja para facilitar uma mudança de carreira ou para obter maior clareza sobre a trajetória profissional.",
+  },
+  {
+    summary: "Quantas perguntas tem o Teste Vocacional da Match Career?",
+    details:
+      "O teste da Match Career é composto por 20 perguntas que, por meio das suas respostas, relacionam suas potenciais habilidades com áreas de conhecimento, permitindo que você descubra novas possibilidades de vocação de maneira simples e intuitiva.",
   },
 ];
 
