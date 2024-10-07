@@ -33,7 +33,7 @@ const accordionItems: AccordionItemType[] = [
   {
     summary: "Como funciona o Teste Vocacional?",
     details:
-      "O Teste Vocacional da Quero Bolsa é baseado na teoria das inteligências múltiplas, que argumenta que cada indivíduo pode apresentar diferentes tipos de inteligência que influenciam suas escolhas profissionais.",
+      "O Teste Vocacional da Match Career é baseado na teoria das múltiplas inteligências, que argumenta que cada indivíduo pode apresentar diferentes tipos de inteligência que influenciam suas escolhas profissionais.",
   },
   {
     summary: "Por que fazer o Teste Vocacional?",
