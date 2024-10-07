@@ -1,6 +1,9 @@
+"use client"
 import { GraduationCap, MessageCircleHeart, MousePointerClick } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import { AnimateImage, AnimateListItem, AnimateSpan, AnimateTitle, AnimateTitle2, TitleY } from "../ui/AnimateMotion";
 
 const items = [
     {
@@ -23,30 +26,39 @@ const items = [
 export default function Steps() {
   return (
     <section>
-      <h3 className="text-3xl md:text-4xl font-bold md:leading-tight mb-14 text-center">
+      <motion.h3
+      {...TitleY}
+      {...AnimateTitle2}
+      className="text-3xl md:text-4xl font-bold md:leading-tight mb-14 text-center">
         Como {""}
         <span className="bg-primary bg-clip-text text-transparent">
           funciona
         </span>{" "}
         o teste vocacional?
-      </h3>
+      </motion.h3>
       <div className="flex flex-wrap justify-between items-center gap-8">
         <div>
           <ul className="lg:max-w-[643px] space-y-8">
             {items.map((item, index) => (
-              <li key={index} className="flex flex-wrap justify-center items-center gap-6">
+              <motion.li key={index}
+              {...AnimateListItem}
+            transition={{ ...AnimateListItem.transition, delay: index * 0.2 }}
+              className="flex flex-wrap justify-center items-center gap-6">
                 <div className="p-6 rounded-full text-[#FD3078] bg-[#FF675C1A]">
                   {item.icon}
                 </div>
                 <div className="texto lg:max-w-[543px] space-y-5 gap-6">
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  <h5
+                  className="text-xl font-semibold">{item.title}</h5>
                   <p className="md:text-xl mb-6 leading-7">{item.description}</p>
                 </div>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
-        <div className="w-full md:w-auto">
+        <motion.div
+        {...AnimateImage}
+        className="w-full md:w-auto">
           <Image
             src="/images/ilustracao-lapis.png"
             alt="Ilustração Lápis"
@@ -54,7 +66,7 @@ export default function Steps() {
             height={542}
             className="md:max-w-full max-w-80 mx-auto"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
