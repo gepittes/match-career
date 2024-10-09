@@ -1,6 +1,6 @@
 "use client";
 import AccordionComponent from "../ui/AcordionComponent";
-import { AnimateButton, AnimateTitle, AnimateTitle2, TitleY } from "../ui/AnimateMotion";
+import { AnimateButton, AnimateTitle2, TitleY } from "../ui/AnimateMotion";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 
@@ -10,8 +10,7 @@ const Home = () => {
       <motion.h3
         {...TitleY}
         {...AnimateTitle2}
-        
-        className="text-3xl md:text-4xl font-bold leading-normal text-center mb-14"
+        className="text-2xl sm:text-3xl md:text-4xl font-bold leading-normal text-center mb-14"
       >
         Tire suas{" "}
         <span className="bg-primary bg-clip-text text-transparent">
@@ -28,7 +27,7 @@ const Home = () => {
         <Button
           variant={"primary"}
           size={"default"}
-          className="md:text-xl font-semibold w-full md:w-2/5 py-0 mx-auto my-5 "
+          className="font-medium w-full md:w-2/5 py-0 mx-auto my-5"
         >
           Fazer teste agora!
         </Button>

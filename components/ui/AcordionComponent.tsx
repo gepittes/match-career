@@ -71,11 +71,11 @@ const AccordionComponent: React.FC = () => {
 
         return (
           <motion.div
-          {...AnimateListItem}
+            key={index}
+            {...AnimateListItem}
             transition={{ ...AnimateListItem.transition, delay: index * 0.2 }}
           >
             <AccordionItem
-              key={index}
               value={`item-${index}`}
               className="border border-gray-200 rounded py-4 px-5 mb-4"
             >
@@ -83,9 +83,7 @@ const AccordionComponent: React.FC = () => {
                 onClick={() => handleToggle(`item-${index}`)}
                 className="w-full flex gap-2 justify-between items-center text-left text-lg font-normal text-gray-800"
               >
-                <span
-                  className="md:text-xl"
-                >
+                <span className="text-base sm:text-lg md:text-xl">
                   {item.summary}
                 </span>
                 <motion.div
@@ -103,7 +101,9 @@ const AccordionComponent: React.FC = () => {
                   transition={{ type: "spring", stiffness: 250, damping: 20, duration: 1 }}
                   style={{ overflow: "hidden" }}
                 >
-                  <p className="md:text-xl leading-7">{item.details}</p>
+                  <p className="text-base sm:text-lg md:text-xl leading-7">
+                    {item.details}
+                  </p>
                 </motion.div>
               </AccordionContent>
             </AccordionItem>
