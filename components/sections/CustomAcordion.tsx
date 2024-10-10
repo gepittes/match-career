@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import AccordionComponent from "../ui/AcordionComponent";
 import { AnimateButton, AnimateTitle2, TitleY } from "../ui/AnimateMotion";
 import { Button } from "../ui/button";
@@ -25,11 +26,14 @@ const Home = () => {
         className="w-full text-center"
       >
         <Button
+          asChild
           variant={"primary"}
           size={"default"}
-          className="font-medium w-full md:w-2/5 py-0 mx-auto my-5"
+          className="font-medium py-0 z-10 w-full md:w-3/5"
         >
-          Fazer teste agora!
+          <Link href="https://wa.me/5561981088070?text=Ol%C3%A1,%20gostaria%20de%20realizar%20o%20teste%20vocacional" target="_blank">
+            Começar o teste agora!
+          </Link>
         </Button>
       </motion.div>
     </div>

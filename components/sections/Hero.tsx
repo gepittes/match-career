@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import ImagesMatch from "../ui/ImagesMatch";
@@ -52,13 +52,17 @@ export const Hero = () => {
             </motion.p>
             <motion.div {...AnimateContainer} {...AnimateButton} className="w-full">
               <Button
+                asChild
                 variant={"primary"}
                 size={"default"}
                 className="font-medium py-0 z-10 w-full md:w-3/5"
               >
-                Começar o teste agora!
+                <Link href="https://wa.me/5561981088070?text=Ol%C3%A1,%20gostaria%20de%20realizar%20o%20teste%20vocacional" target="_blank">
+                  Começar o teste agora!
+                </Link>
               </Button>
             </motion.div>
+
           </motion.div>
           <motion.div {...AnimateImage} className="relative">
             <ImagesMatch />

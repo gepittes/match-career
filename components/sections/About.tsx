@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
@@ -49,13 +50,16 @@ export default function About() {
             {...AnimateButton}
             className="w-full"
           >
-            <Button
-              variant={"primary"}
-              size={"default"}
-              className="font-medium w-full md:w-3/5 py-0"
-            >
-              Fazer teste agora!
-            </Button>
+              <Button
+                asChild
+                variant={"primary"}
+                size={"default"}
+                className="font-medium py-0 z-10 w-full md:w-3/5"
+              >
+                <Link href="https://wa.me/5561981088070?text=Ol%C3%A1,%20gostaria%20de%20realizar%20o%20teste%20vocacional" target="_blank">
+                  Começar o teste agora!
+                </Link>
+              </Button>
           </motion.div>
         </div>
       </div>
